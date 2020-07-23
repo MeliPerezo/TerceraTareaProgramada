@@ -39,7 +39,7 @@ public class Kruskall {
 
         }
 
-        public Route getMinimalRoute() {
+        public Route getRutaMinima() {
 
             int minWeigth = Integer.MAX_VALUE;
             int minSource = 0;
@@ -65,7 +65,7 @@ public class Kruskall {
         public void kruskal() {
             int index = 0;
             while (index < noVertex - 1) {
-                Route route = getMinimalRoute();
+                Route route = getRutaMinima();
                 if (route != null) {
                     routes[index] = route;
                 }
@@ -79,7 +79,7 @@ public class Kruskall {
             kruskal();
 
             while (index < noVertex - 1) {
-                this.result = this.result + "Ruta desde: " + routes[index].source + 1 + " hasta " + routes[index].destiny + 1 + " con un peso de " + routes[index].weigth + "\n";
+                this.result = this.result + "Ruta desde: " + (routes[index].source )  + "------>" + (routes[index].destiny + 1) + " con un peso de " + routes[index].weigth + "\n";
 
                 index++;
             }

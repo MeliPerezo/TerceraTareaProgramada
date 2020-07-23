@@ -5,9 +5,9 @@ public class MainKruskall {
 
 
         int adjacency_matrix[][] = {{0, 0, 0, 0},
-                {10, 0, 0, 0},
-                {6, 0, 0, 0},
-                {5, 15, 4, 0}};
+                                    {10, 0, 0, 0},
+                                    {6, 0, 0, 0},
+                                    {5, 15, 4, 0}};
 
 
         Kruskall graph = new Kruskall(adjacency_matrix);
